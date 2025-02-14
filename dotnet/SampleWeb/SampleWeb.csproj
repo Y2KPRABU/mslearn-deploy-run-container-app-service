@@ -4,6 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+          <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup> 
 
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  <ItemGroup>
+    <Content Update="Properties\launchSettings.json">
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup> <GenerateRazorAssemblyInfo>false</GenerateRazorAssemblyInfo> </PropertyGroup>
+  
 </Project>
